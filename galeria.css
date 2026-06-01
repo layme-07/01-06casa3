@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #1a1a2e;
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+  
+  main header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+  }
+  
+  main header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  main header p {
+    font-size: 0.95rem;
+    color: #a0a0b0;
+  }
+  .cuadricula-galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;   
+  }
+  .item-galeria {
+    border: 1px solid #4a4a6a;
+    border-radius: 10px;
+    overflow: hidden;        
+    position: relative;
+  
+    width: 300px;
+    flex-shrink: 0;
+  }
+
+  .item-galeria img {
+    width: 100%;
+    display: block;         
+  
+    transition: transform 0.5s ease; 
+  }
+  .item-galeria:hover img {
+    transform: scale(1.1);
+  }
+  .item-galeria figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.55); 
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.55rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  .item-galeria:hover figcaption {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
